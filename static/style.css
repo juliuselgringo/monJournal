@@ -1,0 +1,126 @@
+html {
+  background-image: url(bg.jpg);
+}
+body {
+  background-color: #a07676;
+  width: 700px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  border: 10px groove black;
+}
+h1 {
+  text-align: center;
+  font-variant: small-caps;
+  text-shadow: 2px 2px 5px black;
+}
+h2
+{
+  clear:both;
+}
+
+img.bio {
+  padding: 40px;
+  float:left;
+}
+
+p {
+  text-align: justify;
+  line-height: 22px;
+}
+
+.video
+{
+  float:right;
+  padding: auto;
+  padding-left: 10px;
+}
+.cache
+{
+  float:left
+}
+
+div.calc
+{
+  height: 220px;
+}
+a
+{
+  color: #490303;
+}
+a:hover
+{
+  color:rgb(20, 15, 102);
+}
+
+.accueil
+{
+  list-style-image: url(../media/accueil2.png);
+  list-style-position:inside;
+}
+.contact
+{
+  list-style-image: url(../media/contact2.png);
+  list-style-position:inside;
+}
+.divers
+{
+  list-style-image: url(../media/divers2.png);
+  list-style-position:inside;
+}
+
+.container
+{
+  display: flex;
+  justify-content: space-around;
+}
+
+.obj1, .obj2
+{
+  background-color: #d4bdbd;
+  border: 1px solid black;
+  border-radius: 8%;
+  box-shadow: 0 0 3px black;
+  padding: 10px;
+  flex-direction: row;
+}
+.container2
+{
+  display: flex;
+  flex-direction: column;
+}
+.mesadresse, .message
+{
+  background-color: #d4bdbd;
+  border: 1px solid black;
+  box-shadow: 0 0 3px black;
+  border-radius:8px;
+  padding: 10px;
+}
+.mesadresse
+{
+  margin-top: 50px;
+  width: 300px;
+  height: 100px;
+}
+.message
+{
+  margin-left: 80px;
+  margin-top: 50px;
+  height: 250px;
+}
+textarea
+{
+  width: 500px;
+}
+.mail
+{
+  list-style-image: url(mail2.png);
+  list-style-position:inside;
+}
+.youtube
+{
+  list-style-image: url(youtube2.png);
+  list-style-position:inside;
+}
