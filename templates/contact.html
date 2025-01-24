@@ -2,20 +2,19 @@
 <html lan="fr">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Julius El Gringo devient Dev Web</title>
-    <link rel="stylesheet" href="../static\style.css"/>
+    <link rel="stylesheet" href="../static/style.css"/>
   </head>
   <body>
     <header id="hautDePage">
       <h1>Contact</h1>
-      <div class="container">
-        <div class="obj1">
-          <nav class="sousMenu" >
-            <div class="menuTitre">Menu du site</div>
-            <div class="accueil"><img id="puce" src="../media/accueil2.png"><a href="../index.html" >Accueil</a></div>
-            <div class="divers"><img id="puce" src="../media/divers2.png"><a href="Divers.html">Divers</a></div>
-          </nav>
-        </div>
+      <div class="menu">
+        <nav class="sousMenu" >
+          <div class="menuTitre">Menu du site</div>
+          <div class="accueil"><img id="puce" src="../media/accueil2.png"><a href="../index.html" >Accueil</a></div>
+          <div class="divers"><img id="puce" src="../media/divers2.png"><a href="Divers.html">Divers</a></div>
+        </nav>
       </div> 
       <br>     
     </header>
@@ -27,13 +26,13 @@
           <ul>
             <li class="mail"><a href="juliuselgringo@gmail.com">julien.rousselot@gmail.com</a></li>
             <li class="youtube">YouTube</li>
-        </ul>
+          </ul>
         </div>
         <div class="message">
-          <form method="post" id="message" action="">
-            <fieldset form="message">
+          <form name="IDmessage" method="post" id="iDmessage" action="">
+            <fieldset form="message" name="formMessage" id="formMessage">
               <legend>Laissez moi un petit message ici</legend>
-                <textarea name="message" rows=10 cols=50  maxlength="200" placeholder="commentaire ou message"></textarea>
+                <textarea name="textField" id="textField" rows=10 cols=50  maxlength="200" placeholder="commentaire ou message"></textarea>
                 <br>
                 <input type="submit" name="valid_form" value="Envoyer">
             </fieldset>

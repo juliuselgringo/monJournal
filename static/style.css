@@ -10,6 +10,11 @@ body {
   padding-right: 30px;
   border: 10px groove black;
 }
+
+header{
+  margin-top: 200px;
+}
+
 h1 {
   text-align: center;
   font-variant: small-caps;
@@ -24,6 +29,8 @@ h2{
   display: grid;
   margin-top: 50px;
   margin-bottom: 50px;
+  position:fixed;
+  top: -10px;
 }
 
 .sousMenu{
@@ -45,10 +52,6 @@ h2{
   text-wrap: nowrap;
 }
 
-.titre2, .titre3{
-  padding-left: 25px;
-  padding-right: 40px;
-}
 .accueil, .contact, .divers, .titre2, .titre3{
   margin-left: 75px;
 }
@@ -57,6 +60,12 @@ h2{
   padding: 5px;
   vertical-align: bottom;
 }
+
+.titre2, .titre3{
+  padding-left: 25px;
+  padding-right: 40px;
+}
+
 
 img.bio {
   padding: 40px;
@@ -81,7 +90,7 @@ p {
 
 div.calc
 {
-  height: 220px;
+  height: auto;
 }
 a
 {
@@ -124,11 +133,86 @@ textarea
 }
 .mail
 {
-  list-style-image: url(mail2.png);
+  list-style-image: url(../media/mail2.png);
   list-style-position:inside;
 }
 .youtube
 {
-  list-style-image: url(youtube2.png);
+  list-style-image: url(../media/youtube2.png);
   list-style-position:inside;
+}
+
+@media(max-width: 770px){
+  body{
+    width: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  img.bio{
+    padding:0;
+    float: none;
+  }
+  .cache {
+    display: flex;
+    float: none;
+    flex-direction:column;
+  }
+  img{
+    width: 200px;
+  }
+  
+  .menu{
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    position:fixed;
+    top: -20px;
+  }
+
+  .sousMenu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 15px;
+    width: 100px;
+    height:auto;
+  }
+
+
+  .accueil, .contact , .divers, .menuTitre,.titre2 ,.titre3{
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: auto;
+    text-wrap: wrap;
+  }
+  .accueil, .contact, .divers, .titre2, .titre3{
+    margin-left: 0;
+  }
+
+  #puce{
+    display: none;
+  }
+  .mesadresse
+  {
+    margin: 0;
+    margin-top: 50px;
+    padding-left: 0;
+    text-align: left;
+    width: 200px;
+    height: 100px;
+  }
+  .message
+  {
+    margin-left: 0;
+    margin-top: 10px;
+    height: 250px;
+  }
+  textarea
+  {
+    width: 150px;
+  }
+  ul{
+    padding-left: 10px;
+  }
 }
